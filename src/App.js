@@ -1,12 +1,38 @@
 import React from 'react';
-import logo from './assets/header.png';
 import './App.css';
 
 function App() {
     return (
-        <div className="image-container">
-            <img src={logo} alt="App Banner" className="responsive-image" />
-            <h1 className="coming-soon">COMING SOON</h1>
+        <div className="container">
+            {/* Gradient Background */}
+            <div className="gradient-background"></div>
+
+            {/* Video Banner */}
+            <div className="video-banner">
+                <video className="banner-video" autoPlay loop muted playsInline>
+                    <source src="/assets/video.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                </video>
+
+                {/* Logo */}
+                <img src="/assets/logo.png" alt="Logo" className="logo" />
+
+                {/* Coming Soon */}
+                <h2 className="coming-soon">COMING SOON</h2>
+
+                {/* Social Media Icons */}
+                <div className="social-icons">
+                    <a href="https://tiktok.com/@pegasusfly_" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@PegasusFly_" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitch.tv/pegasusfly_" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-twitch"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     );
 }
