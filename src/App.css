@@ -1,0 +1,58 @@
+/* 🧹 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌍 Ensure Full Viewport Coverage */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 🎨 Gradient Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #DD3DF2, #7429A6, #180D40, #3DF2E0, #F2913D);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* 🌈 Animated Gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 📦 Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 🖼️ Responsive Image */
+.responsive-image {
+    width: 90vw; /* Cover 90% of the screen width */
+    max-width: 1200px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent stretching */
+    border-radius: 8px; /* Add subtle rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}

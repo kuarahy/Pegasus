@@ -1,8 +1,12 @@
 import React from 'react';
+import logo from './assets/header.png';
+import './App.css';
 
 function App() {
     return (
-        <h1>Time to be like no one ever was!</h1>
+        <div className="image-container">
+            <img src={logo} alt="App Banner" className="responsive-image" />
+        </div>
     );
 }
 
