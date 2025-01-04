@@ -8,7 +8,7 @@ My Little Shop Website in React. OMG.
 ☐ Merch design
 ☐ Add embed merge links for merch <br>
 ☐ Add charity information page <br>
-☐ Add logo favicon <br>
+✅ Add logo favicon <br>
 ☐ Add Konami code <br
 ☐ Add TMNT song code <br>
 ☐ Add other links (Discord, linktree?, etc) <br>
