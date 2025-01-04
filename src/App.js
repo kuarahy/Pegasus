@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductList from './components/ProductList.js';
 import './App.css';
 
 function App() {
@@ -7,15 +8,20 @@ function App() {
             {/* Gradient Background */}
             <div className="gradient-background"></div>
 
+            <div className="container">
+                <h1>Our Merch Store</h1>
+                <ProductList/>
+            </div>
+
             {/* Video Banner */}
             <div className="video-banner">
                 <video className="banner-video" autoPlay loop muted playsInline>
-                    <source src="/assets/video.webm" type="video/webm" />
+                    <source src="/assets/video.webm" type="video/webm"/>
                     Your browser does not support the video tag.
                 </video>
 
                 {/* Logo */}
-                <img src="/assets/logo.png" alt="Logo" className="logo" />
+                <img src="/assets/logo.png" alt="Logo" className="logo"/>
 
                 {/* Coming Soon */}
                 <h2 className="coming-soon">COMING SOON</h2>
