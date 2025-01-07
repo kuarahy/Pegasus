@@ -1,0 +1,79 @@
+/* 🛍️ Product List Container */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* 🛍️ Individual Product Card */
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Product Image */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+/* 📝 Product Title */
+.product-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* 💲 Product Price */
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 🔗 View Product Button */
+.product-card a {
+    text-decoration: none;
+    color: white;
+    background: #7429A6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: background 0.2s ease-in-out;
+}
+
+.product-card a:hover {
+    background: #F2913D;
+}
+
+/* ⚙️ Loading and Error Messages */
+.error-message {
+    color: #D9534F;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.loading-message {
+    color: #5A5A5A;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
