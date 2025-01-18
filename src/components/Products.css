@@ -1,4 +1,4 @@
-/* 🛍️ Product List Container */
+/* 🛍️ Products List Container */
 .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -8,7 +8,7 @@
     max-width: 1200px;
 }
 
-/* 🛍️ Individual Product Card */
+/* 🛍️ Individual Products Card */
 .product-card {
     background: #fff;
     border-radius: 8px;
@@ -24,7 +24,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* 🖼️ Product Image */
+/* 🖼️ Products Image */
 .product-card img {
     width: 100%;
     height: 200px;
@@ -33,20 +33,20 @@
     margin-bottom: 10px;
 }
 
-/* 📝 Product Title */
+/* 📝 Products Title */
 .product-card h3 {
     font-size: 1.1rem;
     margin: 10px 0;
     color: #333;
 }
 
-/* 💲 Product Price */
+/* 💲 Products Price */
 .product-card p {
     font-size: 0.9rem;
     color: #666;
 }
 
-/* 🔗 View Product Button */
+/* 🔗 View Products Button */
 .product-card a {
     text-decoration: none;
     color: white;

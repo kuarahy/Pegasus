@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Product from './Product.js';
+import Products from './Products.js';
 import './Products.css';
 
 
@@ -9,7 +9,12 @@ function ProductList() {
     const [error, setError] = useState(null);
 
     // Use dynamic environment variable
-    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
+    const API_BASE_URL =
+        process.env.NODE_ENV === 'development'
+            ? 'http://localhost:5000' // Use localhost in development
+            : window.location.origin; // Use the current domain in production/preview
+
+    console.log('🛠️ API Base URL:', API_BASE_URL);
 
     // 🐞 Debug Line
     console.log('🛠️ API Base URL:', API_BASE_URL);
@@ -45,7 +50,7 @@ function ProductList() {
             <h2>🛍️ Our Merch Store</h2>
             <div className="product-grid">
                 {products.map((product) => (
-                    <Product key={product.id} product={product} />
+                    <Products key={product.id} product={product} />
                 ))}
             </div>
         </div>

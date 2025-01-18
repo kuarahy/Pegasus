@@ -1,21 +1,21 @@
 import React from 'react';
 
-function Product({ product }) {
+function Products({ product }) {
     if (!product) return <p>Loading product...</p>;
 
     return (
         <div className="product-card">
-            {/* 🖼️ Product Image */}
+            {/* 🖼️ Products Image */}
             <img
                 src={product.thumbnail_url || '/assets/default-image.png'}
                 alt={product.name}
                 className="product-image"
             />
 
-            {/* 📝 Product Title */}
+            {/* 📝 Products Title */}
             <h3 className="product-title">{product.name}</h3>
 
-            {/* 💲 Product Price */}
+            {/* 💲 Products Price */}
             <p className="product-price">
                 Price: $
                 {product.retail_price ||
@@ -23,7 +23,7 @@ function Product({ product }) {
                     (product.variants?.[0]?.price || 'N/A')}
             </p>
 
-            {/* 🔗 View Product Button */}
+            {/* 🔗 View Products Button */}
             <a
                 href={product.url || `https://printful.com/product/${product.external_id}`}
                 target="_blank"
@@ -36,4 +36,4 @@ function Product({ product }) {
     );
 }
 
-export default Product;
+export default Products;
