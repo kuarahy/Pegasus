@@ -45,6 +45,11 @@ app.get('/api/products', async (req, res) => {
     }
 });
 
+// 🩺 Another back end check
+app.get('/', (req, res) => {
+    res.send("I didn't peg you to be one to check back-ends! 😉");
+});
+
 // 🩺 Health Check Route
 app.get('/api/health', (req, res) => {
     res.json({ status: '✅ Backend is running!' });
