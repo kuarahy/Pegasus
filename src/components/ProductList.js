@@ -14,8 +14,6 @@ function ProductList() {
             ? 'http://localhost:5000' // Use localhost in development
             : window.location.origin; // Use the current domain in production/preview
 
-    console.log('🛠️ API Base URL:', API_BASE_URL);
-
     // 🐞 Debug Line
     console.log('🛠️ API Base URL:', API_BASE_URL);
 
