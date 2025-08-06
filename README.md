@@ -1,5 +1,7 @@
 # Pegasus Merch Site
-My Little Shop Website in React. OMG.
+A React website for PegasusFly
+
+[Link](https://www.pegasus.stream)
 
 ## ToDo
 
